@@ -151,7 +151,7 @@ export default class Slider extends PureComponent {
     /**
      * Sets children for the thumb.
      */
-    thumbChildren: ViewPropTypes.children,
+    thumbChildren: PropTypes.node,
 
     /**
      * Set this to true to visually see the thumb touch rect in green.
