@@ -149,6 +149,11 @@ export default class Slider extends PureComponent {
     thumbImage: Image.propTypes.source,
 
     /**
+     * Sets children for the thumb.
+     */
+    thumbChildren: ViewPropTypes.children,
+
+    /**
      * Set this to true to visually see the thumb touch rect in green.
      */
     debugTouchArea: PropTypes.bool,
@@ -222,6 +227,7 @@ export default class Slider extends PureComponent {
       maximumTrackTintColor,
       thumbTintColor,
       thumbImage,
+      thumbChildren,
       styles,
       style,
       trackStyle,
@@ -299,6 +305,7 @@ export default class Slider extends PureComponent {
             },
           ]}
         >
+          {thumbChildren}
           {this._renderThumbImage()}
         </Animated.View>
         <View
