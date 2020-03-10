@@ -296,7 +296,7 @@ export default class Slider extends PureComponent {
         />
         <Animated.View
           onLayout={this._measureThumb}
-          renderToHardwareTextureAndroid
+          // renderToHardwareTextureAndroid
           style={[
             { backgroundColor: thumbTintColor },
             mainStyles.thumb,
